@@ -1,0 +1,15 @@
+#NavBar{
+    background: #20274D !important;
+    
+}
+.bg-light{
+    background: none;
+}
+#Address li{
+    list-style-type: none;
+    color:#fff;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(250, 246, 246, 0.5);
+    border-color: rgba(250, 246, 246, 0.5);
+}

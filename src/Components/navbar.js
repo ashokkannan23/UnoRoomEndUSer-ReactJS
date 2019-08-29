@@ -1,34 +1,36 @@
 import React from 'react';
-import unologo from '../assets/image/1Room_logo.png';
+import './src/../../assets/css/navBar.css';
+
+import unoLogo from './src/../../assets/image/Room_logo.png';
+
+const logolink = 'http://localhost:3000/';
+
+const imgstyle = {
+    width: '120px',
+    height: '50px'
+
+}
 
 function NavBar() {
     return (
-        <div className="jumbotron">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="NavBar">
+            <a className="navbar-brand" href={logolink}><img src={unoLogo} style={imgstyle} alt="" /> </a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
 
-            <div className="navbar navbar-default">
-                <div className="navbar-header">
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                    <a className="navbar-brand" href="index.html"><img src={unologo}></img></a>
-                </div>
-                <div className="collapse navbar-collapse" id="myNavbar">
-
-                    <ul className="nav navbar-nav navbar-right" id="PropertyAddress">
-                        <li>
-                            90, K.H. Road, Double Road,<br />
-                            Opp. KSRTC Office, Shanthi Nagar, Bangalore, <br />
-                            Pincode - 560 027. India<br />
-                            <span className="contact">Phone no: +91 80 22248655</span>
-                        </li>
-                        <li className="contact">+91 80 22248655</li>
-                    </ul>
-                </div>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                </ul>
+                <form className="form-inline my-2 my-lg-0" id="Address">
+                    <li>
+                        90, K.H. Road, Double Road, Opp. KSRTC Office,<br />
+                        Shanthi Nagar, Bangalore, Pincode - 560 027. India <br />
+                        <span class="contact">Phone no: +91 80 22248655</span>
+                    </li>
+                </form>
             </div>
-
-        </div>
+        </nav>
     );
 }
 
