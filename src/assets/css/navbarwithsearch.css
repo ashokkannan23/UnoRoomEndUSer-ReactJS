@@ -1,0 +1,54 @@
+#NavBarwithsearch, .jumbotron-fluid{
+    background: #20274D !important;
+    
+}
+.center {
+    width: 70%;
+}
+.t-datepicker {
+    width: 50% !important;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.form-inline #propertyname {
+    width: 30%;
+}
+#propertyname {
+    border-radius: 10px 0 0 10px;
+}
+.form-inline button {
+    padding: 10px 20px;
+    background-color: #FF0000;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0 5px 0;
+}
+.form-inline select {
+    vertical-align: middle;
+    margin: 5px 0 5px 0;
+    padding: 13px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+}
+#roomType option {
+    padding: 10px;
+}
+#search {
+    border-radius: 0 10px 10px 0;
+}
+.bg-light{
+    background: none;
+}
+#Address li{
+    list-style-type: none;
+    color:#fff;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(250, 246, 246, 0.5);
+    border-color: rgba(250, 246, 246, 0.5);
+}
