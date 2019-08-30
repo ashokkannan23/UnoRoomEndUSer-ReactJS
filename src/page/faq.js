@@ -1,9 +1,15 @@
 import React from 'react';
 
+const containerstyle = {
+    overflow: 'hidden',
+    clear: 'both'
+}
+
 const h4style = {
     h4title: {
         color: '#2a91ff',
-        textAlign: 'center'
+        textAlign: 'center',
+        paddingTop: '20px'
     },
     h4subtitle: {
         paddingLeft: '20px',
@@ -11,9 +17,9 @@ const h4style = {
     }
 }
 
-function Faq() {
+function GuestPolicies() {
     return (
-        <div className="container">
+        <div className="container" style={containerstyle}>
 
             <div className="panel panel-default">
                 <div className="panel-body">
@@ -82,4 +88,4 @@ function Faq() {
 }
 
 
-export default Faq;
+export default GuestPolicies;

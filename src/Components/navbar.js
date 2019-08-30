@@ -1,9 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './src/../../assets/css/navBar.css';
 
 import unoLogo from './src/../../assets/image/Room_logo.png';
-
-const logolink = 'http://localhost:3000/';
 
 const imgstyle = {
     width: '120px',
@@ -14,7 +13,7 @@ const imgstyle = {
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light" id="NavBar">
-            <a className="navbar-brand" href={logolink}><img src={unoLogo} style={imgstyle} alt="" /> </a>
+            <Link to="/" className="navbar-brand"><img src={unoLogo} style={imgstyle} alt="" /></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +25,7 @@ function NavBar() {
                     <li>
                         90, K.H. Road, Double Road, Opp. KSRTC Office,<br />
                         Shanthi Nagar, Bangalore, Pincode - 560 027. India <br />
-                        <span class="contact">Phone no: +91 80 22248655</span>
+                        <span className="contact">Phone no: +91 80 22248655</span>
                     </li>
                 </form>
             </div>
