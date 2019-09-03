@@ -8,6 +8,15 @@
     padding: 10px 0 40px 0;
     margin-bottom: 0px;
     }
+    .icon-hover{ 
+        font-size:15px !important;
+        text-align:center;
+        vertical-align: middle;
+        border:1px solid red;
+        border-radius:7px;
+        padding:5px;
+        margin-top:10px;
+       }
 .red {
     color: red;
   }
