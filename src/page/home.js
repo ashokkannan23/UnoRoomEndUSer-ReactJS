@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import NavBarwithSearch from '../Components/navbarwithsearch';
+import HomeNavBarwithSearch from '../Components/homenavbarwithsearch';
 
 import Footer from '../Components/footer';
 import axios from 'axios';
@@ -22,7 +22,7 @@ class YourComponent extends Component {
         return (
             <div>
                 <div className="container-fluid" style={containerFluidStyle}>
-                    <NavBarwithSearch />
+                    <HomeNavBarwithSearch />
                 </div>
                 <div className="container">
                     <div className="row">

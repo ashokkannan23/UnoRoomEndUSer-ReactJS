@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
-import './src/../../assets/css/navbarwithsearch.css';
-import '../assets/css/t-datepicker.min.css';
+import './src/../../assets/css/homenavbarwithsearch.css';
 import NavBar from './navbar';
 import Example from '../Components/datepicker';
 import axios from 'axios';
 import '../scripts/api';
 
-class NavBarwithSearch extends Component {
+class HomeNavBarwithSearch extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,12 +41,14 @@ class NavBarwithSearch extends Component {
     render() {
         const { propertyname, buildingtype, uiRoomType } = this.state;
         return (
-            <div className="jumbotron-fluid" style={{ paddingBottom: '10px' }}>
+            <div className="jumbotron-fluid">
                 <div className="container-fluid">
                     <NavBar />
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid" style={{ paddingBottom: '40px', paddingTop: '60px' }}>
+
                     <div className="center">
+                        <span style={{ fontSize: '18px' }}>Hotel</span>
                         <div className="form-inline" id="form" action="">
                             <button type="" id="propertyname">{propertyname}</button>
                             <select name="roomtype" id="roomType" placeholder="Room Type">
@@ -73,4 +73,4 @@ class NavBarwithSearch extends Component {
 }
 
 
-export default NavBarwithSearch;
+export default HomeNavBarwithSearch;
