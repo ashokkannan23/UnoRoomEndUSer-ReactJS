@@ -45,12 +45,12 @@ class YourComponent extends Component {
     create = () => {
         axios.post('https://jsonplaceholder.typicode.com/posts', {
             "id": 1,
-            "title": "test",
+            "title": "test123",
             "body": "testing"
         })
-        .then(response=>{
-            console.log(response.data);
-        })
+            .then(response => {
+                console.log(response.data);
+            })
     }
 }
 
