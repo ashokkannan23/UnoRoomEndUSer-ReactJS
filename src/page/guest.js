@@ -10,7 +10,7 @@ const containerFluidStyle = {
 
 }
 
-function About() {
+function GuestPolicies() {
     return (
         <div>
             <div className="container-fluid" style={containerFluidStyle}>
@@ -25,4 +25,4 @@ function About() {
     );
 }
 
-export default About;
+export default GuestPolicies;
