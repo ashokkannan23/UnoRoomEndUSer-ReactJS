@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NavBar from '../Components/navbar';
 import FooterTitle from '../Components/footerTitle';
 
@@ -8,17 +8,19 @@ const containerFluidStyle = {
 
 }
 
-function About() {
-    return (
-        <div>
-            <div className="container-fluid" style={containerFluidStyle}>
-                <NavBar />
-                <div className="container">
-                    <FooterTitle />
+class About extends Component {
+    render() {
+        return (
+            <div>
+                <div className="container-fluid" style={containerFluidStyle}>
+                    <NavBar />
+                    <div className="container">
+                        <FooterTitle />
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default About;
