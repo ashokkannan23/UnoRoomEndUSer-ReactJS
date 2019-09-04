@@ -13,6 +13,7 @@ class HomeNavBarwithSearch extends Component {
             propertyname: [],
             buildingtype: [],
             amenitiesdata: [],
+            testing:'',
             uiRoomType: {
                 "SingleBedRoom": "Single Bed Room",
                 "DoubleBedRoom": "Double Bed Room",
